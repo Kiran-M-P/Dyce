@@ -1,0 +1,343 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #050301;
+}
+
+h1 {
+  font-family: "CarbonThin W00 Regular";
+  font-size: 3rem;
+  line-height: 24px;
+  color: white;
+}
+
+h3 {
+  color: white;
+  font-family: "CarbonThin W00 Regular";
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 24px;
+  margin: 0 0 50px 0;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  width: 60%;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.dice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.p1,
+.p2 {
+  color: white;
+
+  font-size: 1.8rem;
+  font-family: "CarbonThin W00 Regular";
+  font-weight: 800;
+  margin-top: 20px;
+}
+
+.points {
+  color: #909090;
+  font-family: "CarbonThin W00 Regular";
+  font-size: 1.3rem;
+  font-weight: 200;
+  margin-top: 5px;
+}
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.sub-container1 {
+  margin-top: 25px;
+}
+
+.sub-container2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.dice-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: left;
+}
+.sub-container3 {
+  margin: 10vh 0 25px 0;
+}
+
+.btn {
+  border-radius: 9px;
+  font-family: "CarbonThin W00 Regular";
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 1.5rem;
+  background: #050301;
+  padding: 10px 80px;
+  border: solid #ffffff 3px;
+  text-decoration: none;
+}
+
+.contact-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.contact-item {
+  padding: 0 0.8rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: white;
+}
+
+.credits {
+  font-family: "CarbonThin W00 Regular";
+  font-size: 1rem;
+  font-weight: 200;
+  color: #909090;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.shake {
+  -webkit-animation: shake 0.5s infinite;
+  animation: shake 0.5s infinite;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: rotate(8deg);
+    transform: rotate(8deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(8deg);
+    transform: rotate(8deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: rotate(8deg);
+    transform: rotate(8deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(8deg);
+    transform: rotate(8deg);
+  }
+}
+
+@media screen and (min-width: 576px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  img {
+    width: 70%;
+  }
+
+  .p1,
+  .p2 {
+    font-size: 2.2rem;
+  }
+
+  .points {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    font-size: 2rem;
+    padding: 10px 80px;
+  }
+
+  .credits {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+  }
+
+  img {
+    width: 90%;
+  }
+
+  .p1,
+  .p2 {
+    font-size: 3rem;
+  }
+
+  .points {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    font-size: 2.2rem;
+    padding: 10px 100px;
+  }
+
+  .btn:hover {
+    padding: 10px 150px;
+  }
+
+  .credits {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  img {
+    width: 50%;
+  }
+
+  .p1,
+  .p2 {
+    font-size: 1.8rem;
+  }
+
+  .points {
+    font-size: 1.4rem;
+    margin-top: 0;
+  }
+
+  .btn {
+    font-size: 1.8rem;
+    padding: 5px 80px;
+  }
+
+  .btn:hover {
+    padding: 5px 150px;
+  }
+
+  .credits {
+    font-size: 0.9rem;
+  }
+
+  .dice-block {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .sub-container2 {
+    margin-bottom: 50px;
+  }
+}
+@font-face {
+  font-family: "CarbonThin W00 Regular";
+  src: url("fonts/679ce22a309f9b1fe748164185a77074.eot"); /* IE9*/
+  src: url("fonts/679ce22a309f9b1fe748164185a77074.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("fonts/679ce22a309f9b1fe748164185a77074.woff2")
+      format("woff2"),
+    /* chrome、firefox */ url("fonts/679ce22a309f9b1fe748164185a77074.woff")
+      format("woff"),
+    /* chrome、firefox */ url("fonts/679ce22a309f9b1fe748164185a77074.ttf")
+      format("truetype"),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+      url("fonts/679ce22a309f9b1fe748164185a77074.svg#CarbonThin W00 Regular")
+      format("svg"); /* iOS 4.1- */
+}
+
+@font-face {
+  font-family: "CarbonRegular W00 Regular";
+  src: url("fonts/2c3cf766b6a4b0e4ed73c2e3b8a0dc6b.eot"); /* IE9*/
+  src: url("fonts/2c3cf766b6a4b0e4ed73c2e3b8a0dc6b.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("fonts/2c3cf766b6a4b0e4ed73c2e3b8a0dc6b.woff2")
+      format("woff2"),
+    /* chrome、firefox */ url("fonts/2c3cf766b6a4b0e4ed73c2e3b8a0dc6b.woff")
+      format("woff"),
+    /* chrome、firefox */ url("fonts/2c3cf766b6a4b0e4ed73c2e3b8a0dc6b.ttf")
+      format("truetype"),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+      url("fonts/2c3cf766b6a4b0e4ed73c2e3b8a0dc6b.svg#CarbonRegular W00 Regular")
+      format("svg"); /* iOS 4.1- */
+}
